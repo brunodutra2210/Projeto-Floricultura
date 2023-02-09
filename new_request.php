@@ -7,7 +7,7 @@
     <title>New_request</title>
 </head>
 <body>
-    <form action="dados.php" method="POST">
+    <form action="dados.php" method="REQUEST">
         <fieldset>
             <label>Nome</label>
             <input type="text" name="nome">
@@ -18,7 +18,7 @@
             <label>Confirmar Senha</label>
             <input type="password" name="csenha">
             <label>Funcionário</label>
-            <input type="checkbox">
+            <input type="checkbox" name="funcao" value="on">
             <button type="submit" name="criar">Criar conta</button>
         </fieldset>
     </form>
