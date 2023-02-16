@@ -8,13 +8,13 @@
 
 </head>
 <body>
-    <form action="">
+    <form action="autenticacao_login.php" method="REQUEST">
         <fieldset>
             <label>Usuário</label>
-            <input type="text">
+            <input type="text" name="email">
             <label>Senha</label>
-            <input type="password">
-            <button>Login</button>
+            <input type="password" name="csenha">
+            <button type="submit" name="autentic">Login</button>
             <a href="new_request.php">Novo Cadastro</a>
         </fieldset>
     </form>

@@ -6,7 +6,7 @@ require_once("acesso_banco.php");
 function db_insert_teste($nome, $email, $csenha,$funcao) 
 {
 global $conn;
-$sql = "INSERT INTO \"Projeto_loja\".tb_usuario(id_user,nome_usuario,email_user,password_user,funcionario) VALUES ('1','$nome','$email','$csenha',$funcao)";
+$sql = "INSERT INTO \"Projeto_loja\".tb_usuario(nome_usuario,email_user,password_user,funcionario) VALUES ('$nome','$email','$csenha',$funcao)";
 $conn->query($sql);
 return null;
 }
@@ -30,7 +30,7 @@ else
 {
     $funcao='FALSE';
 }
-
+//validação
 if($nome!=NULL && $email!=NULL && $csenha==$senha)
 {
     // chamada da função
