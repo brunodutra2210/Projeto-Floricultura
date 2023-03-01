@@ -1,6 +1,6 @@
 <?php
 
-$bd_host = "192.168.20.18";
+$bd_host = "200.19.1.18";
 $sgbd = "pgsql";
 $base_de_dados = "brunobem";
 $bd_usuario = "brunobem";
